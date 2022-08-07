@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { WinnerContext } from "../store/winner-context";
-import classes from "./Score.module.css";
 import Logo from "./Logo";
+import classes from "./Score.module.css";
 
 const Score: React.FC = () => {
   const { currentScore } = useContext(WinnerContext);

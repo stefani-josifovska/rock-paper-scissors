@@ -2,9 +2,12 @@
   border: 3px solid rgba(255, 255, 255, 0.289199);
   border-radius: 5px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 8%;
   margin: 32px;
+  height: 13vh;
+  min-height: 63px;
 }
 
 .score-display {
@@ -13,7 +16,14 @@
   border-radius: 4px;
   margin: 12px;
   box-sizing: border-box;
-  width: 10%;
+  height: 80%;
+  width: 20%;
+  max-width: 95px;
+  min-width: 62px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .score-display p {
@@ -26,6 +36,7 @@
   letter-spacing: 1.5625px;
   color: #2a45c2;
   margin: 0;
+  text-transform: uppercase;
 }
 
 .score-display h2 {
@@ -37,4 +48,8 @@
   text-align: center;
   color: #565468;
   margin: 0;
+}
+
+.logo {
+  height: 80%;
 }

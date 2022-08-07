@@ -1,0 +1,34 @@
+.container {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f2f2f2;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: #3b4262;
+}
+
+.container button {
+  border: none;
+  background-color: transparent;
+  color: #3b4262;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  width: 2rem;
+  height: 2rem;
+  font-size: large;
+}
+
+.container button:hover,
+.container button:active {
+  cursor: pointer;
+}

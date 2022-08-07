@@ -9,6 +9,8 @@ export type WinnerContextObject = {
   currentScore: number;
   currentResult: string;
   resetGame: () => void;
+  areRulesDisplayed: boolean;
+  displayRules: () => void;
 };
 
 export const WinnerContext = React.createContext<WinnerContextObject>({
@@ -20,4 +22,6 @@ export const WinnerContext = React.createContext<WinnerContextObject>({
   currentScore: 0,
   currentResult: "",
   resetGame: () => {},
+  areRulesDisplayed: false,
+  displayRules: () => {}
 });

@@ -10,6 +10,7 @@ const WinnerContextProvider: React.FC<{ children: React.ReactNode }> = ({
   const [houseChoice, setHouseChoice] = useState("");
   const [gameResult, setGameResult] = useState(""); // did player win, lose, or it's a tie
   const [score, setScore] = useState(0);
+  const [areRulesDisplayed, setAreRulesDisplayed] = useState<boolean>(false);
 
   const setPlayerChoiceHandler = (choice: string) => setPlayerChoice(choice);
   const setHouseChoiceHandler = (choice: string) => setHouseChoice(choice);
@@ -30,6 +31,10 @@ const WinnerContextProvider: React.FC<{ children: React.ReactNode }> = ({
     setGameResult("");
   };
 
+  const onRulesClickHandler = () => {
+    setAreRulesDisplayed((prev) => !prev);
+  };
+
   const contextValue: WinnerContextObject = {
     playerChoice: playerChoice,
     houseChoice: houseChoice,
@@ -39,6 +44,8 @@ const WinnerContextProvider: React.FC<{ children: React.ReactNode }> = ({
     currentScore: score,
     currentResult: gameResult,
     resetGame: resetGameHandler,
+    areRulesDisplayed: areRulesDisplayed,
+    displayRules: onRulesClickHandler,
   };
 
   return (

@@ -1,12 +1,12 @@
-import * as React from "react";
+import classes from "./Score.module.css";
 
 const Logo = () => {
   return (
     <svg
+      viewBox="0 0 162 99"
+      className={classes.logo}
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      width="162"
-      height="99"
     >
       <defs>
         <filter

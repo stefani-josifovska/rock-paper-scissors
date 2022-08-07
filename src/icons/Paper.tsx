@@ -1,4 +1,4 @@
-const Paper: React.FC<{ onClick: () => void }> = ({onClick}) => {
+const Paper: React.FC<{ onClick?: () => void }> = ({onClick}) => {
 
   return (
     <div onClick={onClick}>

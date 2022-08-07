@@ -10,7 +10,6 @@ const GameResult: React.FC = () => {
 
   return (
     <div>
-      {/* {currentResult === ("win" || "lose") && <h2>{`You ${currentResult}`}</h2>} */}
       {currentResult !== "" && (
         <>
           <h2>{`You ${currentResult}`}</h2>

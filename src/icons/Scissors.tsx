@@ -1,4 +1,4 @@
-const Scissors: React.FC<{ onClick: () => void }> = ({ onClick }) => {
+const Scissors: React.FC<{ onClick?: () => void }> = ({ onClick }) => {
   return (
     <div onClick={onClick}>
       <svg xmlns="http://www.w3.org/2000/svg" width="51" height="58">

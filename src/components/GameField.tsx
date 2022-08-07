@@ -30,6 +30,19 @@ const GameField: React.FC = () => {
       }, 500);
   }, [didPlayerWin, houseChoice, playerChoice]);
 
+  const displayChoice = (choice: string) => {
+    switch (choice) {
+      case "rock":
+        return <Rock />;
+      case "paper":
+        return <Paper />;
+      case "scissors":
+        return <Scissors />;
+      default:
+        return <h2>An error occured.</h2>;
+    }
+  };
+
   return (
     <>
       {playerChoice === "" && (
@@ -41,11 +54,11 @@ const GameField: React.FC = () => {
       )}
       {playerChoice !== "" && (
         <div>
-          <h1>{playerChoice}</h1>
+          <h1>{displayChoice(playerChoice)}</h1>
           <p>you picked</p>
           {houseChoice !== "" && (
             <>
-              <h1>{houseChoice}</h1>
+              {displayChoice(houseChoice)}
               <p>house picked</p>
             </>
           )}

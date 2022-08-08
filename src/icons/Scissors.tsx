@@ -5,13 +5,7 @@ const Scissors: React.FC<{ onClick?: () => void }> = ({ onClick }) => {
     <div className={classes.container}>
       <div
         onClick={onClick}
-        className={classes["icon-container"]}
-        style={{
-          borderColor: "#EB9F0E",
-          boxShadow: "0px 10px 3px rgba(0 0 0 0.196706)",
-          gridColumn: "2 / -1",
-          gridRow: "1 / 2"
-        }}
+        className={`${classes["icon-container"]} ${classes["scissors"]}`}
       >
         <svg viewBox="0 0 51 58" xmlns="http://www.w3.org/2000/svg">
           <path

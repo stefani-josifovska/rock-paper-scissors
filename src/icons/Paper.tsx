@@ -9,13 +9,7 @@ const Paper: React.FC<{ onClick?: () => void }> = ({ onClick }) => {
       ></div>
       <div
         onClick={onClick}
-        className={classes["icon-container"]}
-        style={{
-          borderColor: "#4664F4",
-          boxShadow: "0 10px 3px rgba(0, 0, 0, 0.196706)",
-          gridColumn: "1 / 2",
-          gridRow: "1 / 2",
-        }}
+        className={`${classes["icon-container"]} ${classes["paper"]}`}
       >
         <svg viewBox="0 0 49 59" xmlns="http://www.w3.org/2000/svg">
           <path

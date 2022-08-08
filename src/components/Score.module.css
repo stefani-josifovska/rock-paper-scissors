@@ -53,3 +53,10 @@
 .logo {
   height: 80%;
 }
+
+@media (min-width: 580px) {
+  .container {
+    width: 60%;
+    margin: 32px auto;
+  }
+}

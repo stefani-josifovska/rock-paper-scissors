@@ -32,3 +32,43 @@
 .container button:active {
   cursor: pointer;
 }
+
+@media (min-width: 610px) {
+  .container {
+    margin: auto;
+    width: 400px;
+    height: 55vh;
+    border-radius: 8px;
+    z-index: 100;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .container button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  .container h2 {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    margin: 0;
+  }
+  .container img {
+    position: absolute;
+    top: 80px;
+    margin-bottom: 20px;
+  }
+  .backdrop {
+    width: 100vw;
+    height: 100vh;
+    background-color: #3b4262;
+    opacity: 0.8;
+    z-index: 30;
+    position: fixed;
+  }
+}
